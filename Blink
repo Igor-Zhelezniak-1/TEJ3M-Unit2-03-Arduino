@@ -1,0 +1,14 @@
+int blinkTime = 1000;
+
+void setup() {
+  pinMode(5, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(5,HIGH);
+  delay(blinkTime);
+  digitalWrite(5,LOW);
+  delay(1000);
+
+  blinkTime = blinkTime + 1000;
+}
